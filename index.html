@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勤怠アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>勤怠アプリ</h1>
+    <form id="attendanceForm">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="status">ステータス:</label>
+        <select id="status" name="status">
+            <option value="出勤">出勤</option>
+            <option value="退勤">退勤</option>
+        </select>
+        <button type="submit">送信</button>
+    </form>
+    <div id="attendanceList"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
